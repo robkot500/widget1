@@ -18,28 +18,28 @@
             padding: 0;
         }
 
-        /* --- Główny kontener "Pigułka" --- */
+        /* --- Główny kontener "Pigułka" (Zmniejszony o 25%) --- */
         #contact-widget-pill {
             position: fixed;
             bottom: 30px;
             right: 30px;
             z-index: 9999;
             background-color: #4a4a4a; /* Ciemnoszare tło pigułki */
-            border-radius: 60px;
+            border-radius: 45px; /* Zmniejszono z 60px */
             display: flex;
             align-items: center;
-            padding: 12px 15px;
-            gap: 15px;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+            padding: 9px 11px; /* Zmniejszono z 12px 15px */
+            gap: 11px; /* Zmniejszono z 15px */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.25);
         }
 
-        /* --- Przyciski wewnątrz pigułki --- */
+        /* --- Przyciski wewnątrz pigułki (Zmniejszone o 25%) --- */
         .pill-btn {
-            width: 65px;
-            height: 65px;
+            width: 49px; /* Zmniejszono z 65px */
+            height: 49px; /* Zmniejszono z 65px */
             border-radius: 50%;
             background-color: #e6e6e6; /* Jasnoszary środek */
-            border: 5px solid #b0b0b0; /* Ciemniejsza obwódka */
+            border: 4px solid #b0b0b0; /* Zmniejszono z 5px */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -55,10 +55,10 @@
             background-color: #f0f0f0;
         }
 
-        /* Styl ikon konturowych */
+        /* Styl ikon konturowych (Zmniejszone o 25%) */
         .pill-btn svg {
-            width: 28px;
-            height: 28px;
+            width: 21px; /* Zmniejszono z 28px */
+            height: 21px; /* Zmniejszono z 28px */
             fill: none;
             stroke: #333333; /* Ciemnoszary kolor obrysu ikony */
             stroke-width: 2;
@@ -144,16 +144,16 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* --- Responsywność --- */
+        /* --- Responsywność dla małych ekranów (Zmniejszone proporcjonalnie) --- */
         @media (max-width: 480px) {
             #contact-widget-pill { 
                 bottom: 15px; 
                 right: 15px; 
-                padding: 10px 12px;
-                gap: 12px;
+                padding: 7px 9px;
+                gap: 9px;
             }
-            .pill-btn { width: 55px; height: 55px; border-width: 4px; }
-            .pill-btn svg { width: 24px; height: 24px; }
+            .pill-btn { width: 41px; height: 41px; border-width: 3px; }
+            .pill-btn svg { width: 18px; height: 18px; }
             .widget-modal { padding: 20px; }
         }
     </style>
